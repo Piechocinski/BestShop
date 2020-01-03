@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <div class="section-calculator">
+        <h2 class="section-header">Calculate how much you’ll pay</h2>
+        <section class="col-x2">
+            <form class="calc-form">
+                <input id="calc-quantity" type="text" placeholder="Products quantity">
+                <input id="calc-est-orders" type="text" placeholder="Estimated orders in month">
+                <label for="calc-package">
+                    <select id="calc-package" required>
+                            <option value="" selected disabled>Choose package</option>
+                            <option value="basic">Basic</option>
+                            <option value="professional">Professional</option>
+                            <option value="premium">Premium</option>
+                    </select>
+                </label>
+                <div class="row">
+                    <input id="calc-check-1" class="form-checkbox" type="checkbox">
+                    <label for="calc-check-1">Accounting</label>
+                </div>
+                <div class="row">
+                    <input id="calc-check-2" class="form-checkbox" type="checkbox">
+                    <label for="calc-check-2">Rental of a payment terminal</label>
+                </div>
+            </form>
+
+                <table class="calc-summary">
+                    <tbody>
+                        <tr>
+                            <th>Products</th>
+                            <td>20 * $0.5</td>
+                            <td>$10</td>
+                        </tr>
+                        <tr>
+                            <th>Orders</th>
+                            <td>30 * $0.25</td>
+                            <td>$7.5</td>
+                        </tr>
+                        <tr>
+                            <th>Package</th>
+                            <td>Premium</td>
+                            <td>$60</td>
+                        </tr>
+                        <tr>
+                            <th>Accounting</th>
+                            <td></td>
+                            <td>$35</td>
+                        </tr>
+                        <tr>
+                            <th>Terminal</th>
+                            <td></td>
+                            <td>$5</td>
+                        </tr>
+                    </tbody>
+                   <tfoot>
+                       <tr>
+                           <th>Total</th>
+                           <td></td>
+                           <td>$117.5</td>
+                       </tr>
+                   </tfoot>
+
+                </table>
+
+        </section>
+    </div>
+
+</body>
+</html>
